@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <nav>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="rightside__wrapper">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <img src="./images/logo.svg" alt="logo">
+                        </div>
+                        <ul class="menu">
+                            <div class="menu__wrapper">
+                                <li class="menu__item"><a href="#" class="menu__link">Collections</a></li>
+                                <div class="active_divider active_divider-collections hide"></div>
+                            </div>
+                            <div class="menu__wrapper">
+                                <li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+                                <div class="active_divider active_divider-men hide"></div>
+                            </div>
+                            <div class="menu__wrapper">
+                                <li class="menu__item"><a href="#" class="menu__link">Women</a></li>
+                                <div class="active_divider active_divider-women hide"></div>
+                            </div>
+                            <div class="menu__wrapper">
+                                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                                <div class="active_divider active_divider-about hide"></div>
+                            </div>
+                            <div class="menu__wrapper">
+                                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                                <div class="active_divider active_divider-contact hide"></div>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                    <div class="leftside__wrapper">
+                        <div class="cart__ico">
+                            <div class="cart__active-item hide">
+                                <div class="cart__active-counter hide"></div>
+                            </div>
+                            <button aria-label="cart" class="finish__cart"><img src="./images/icon-cart-black.svg" alt="cart"></button>
+                        </div>
+                        <div class="photo__img">
+                            <img src="./images/image-avatar.png" alt="photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>            
+            </div>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="total__wrapper">
+                <div class="grid__wrapper">
+                    <img src="./images/image-product-1.jpg" alt="boots" class="boots first">
+                    <div class="320px display">
+                        <div class="prev-320">
+                            <img src="./images/icon-previous.svg" alt="prev">
+                        </div>
+                        <div class="next-320">
+                            <img src="./images/icon-next.svg" alt="next">
+                        </div>
+                    </div>
+                    <div class="wrap wrap__max">
+                        <img data-max src="./images/image-product-1-thumbnail.jpg" alt="boots" class="boots active__class mini">
+                    </div>
+                    <div class="wrap wrap__max wrap__hide">
+                        <img data-max src="./images/image-product-2-thumbnail.jpg" alt="boots" class="boots mini">
+                    </div>
+                    <div class="wrap wrap__max wrap__hide">
+                        <img data-max src="./images/image-product-3-thumbnail.jpg" alt="boots" class="boots mini">
+                    </div>
+                    <div class="wrap wrap__max wrap__hide">
+                        <img data-max src="./images/image-product-4-thumbnail.jpg" alt="boots" class="boots mini">
+                    </div>
+                </div>
+                <div class="flex__wrapper">
+                    <div class="title">Sneaker Company</div>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <div class="descr">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+                    <div class="price__wrapper">
+                        <div class="main__price">$125.00</div>
+                        <div class="sale">50%</div>
+                    </div>
+                    <div class="past__price">$250.00</div>
+                    <div class="btn__wrapper">
+                        <div class="counter__wrapper">
+                            <button id="minus" aria-label="kup teraz"><img src="./images/icon-minus.svg" alt="minus"></button>
+                            <div class="number"></div>
+                            <button id="plus" aria-label="kup teraz"><img src="./images/icon-plus.svg" alt="plus"></button>
+                        </div>
+                        <button aria-label="kup teraz" class="add__btn">
+                            <div class="add__wrapper">
+                                <img src="./images/icon-cart-white.svg" alt="cart">
+                                <div class="btn__text">
+                                    Add to cart
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal hide">
+        <div class="container">
+            <div class="cart">
+                <div class="cart__text">
+                    Cart
+                </div>
+                <div class="divider divider__mini"></div>
+                <div class="cart__value">
+                    <div class="cart__add-item hide">
+                        <div class="cart__add-wrapper">
+                            <div class="img__cart">
+                                <img src="./images/image-product-1-thumbnail.jpg" alt="boots">
+                            </div>
+                            <div class="cart__title">
+                                Fall Limited Edition Sneakers
+                            </div>
+                            <div class="cart__delete-ico"><img src="./images/icon-delete.svg" alt="icon-delete"></div>
+                            <div class="cart__price-wrapper">
+                                <div class="cart__single-price">$125.00 x 1</div>
+                                <div class="cart__total-price">$125.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__value-text">Your cart is empty.</div>
+                </div>
+                <button aria-label="check" class="cart__btn hide">Checkout</button>
+            </div>
+        </div>
+    </section>
+    <section class="slider hide">
+        <div class="container">
+            <div class="grid__wrapper slide">
+                <div class="close"><img src="./images/icon-close.svg" alt="close"></div>
+                <img src="./images/image-product-1.jpg" alt="boots" class="boots first first__slider">
+                <div class="wrap wrap__mini">
+                    <img data-mini src="./images/image-product-1-thumbnail.jpg" alt="boots" class="boots active__class mini">
+                </div>
+                <div class="wrap wrap__mini wrap__hide">
+                    <img data-mini src="./images/image-product-2-thumbnail.jpg" alt="boots" class="boots mini">
+                </div>
+                <div class="wrap wrap__mini wrap__hide">
+                    <img data-mini src="./images/image-product-3-thumbnail.jpg" alt="boots" class="boots mini">
+                </div>
+                <div class="wrap wrap__mini wrap__hide">
+                    <img data-mini src="./images/image-product-4-thumbnail.jpg" alt="boots" class="boots mini">
+                </div>
+                <div class="prev">
+                    <img src="./images/icon-previous.svg" alt="prev">
+                </div>
+                <div class="next">
+                    <img src="./images/icon-next.svg" alt="next">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="side">
+        <ul class="side__menu">
+            <li class="side__menu-item"><a href="#" class="side__menu-link">Collections</a></li>
+            <li class="side__menu-item"><a href="#" class="side__menu-link">Men</a></li>
+            <li class="side__menu-item"><a href="#" class="side__menu-link">Women</a></li>
+            <li class="side__menu-item"><a href="#" class="side__menu-link">About</a></li>
+            <li class="side__menu-item"><a href="#" class="side__menu-link">Contact</a></li>
+        </ul>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
