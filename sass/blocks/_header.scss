@@ -1,0 +1,83 @@
+.nav {
+    height: 200px;
+}
+nav{
+    position: relative;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+.rightside__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding-top: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    &__wrapper {
+        display: flex;
+        height: 125px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: $gray;
+    }
+}
+
+
+.active_divider{
+    width: 80px;
+    height: 5px;
+    background-color: $orange-color;
+    border-radius: 10px;
+    &-collections{
+        width: 80px;
+    }
+    &-men{
+        width: 55px;
+    }
+    &-women{
+        width: 70px;
+    }
+    &-about{
+        width: 70px;
+    }
+    &-contact{
+        width: 65px;
+    }
+    &-contact{
+        width: 65px;
+    }
+}
+.leftside__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.divider {
+    border: 0.5px solid hsl(220, 14%, 75%);
+}
+
+.photo__img {
+    height: 100px;
+    &:hover{
+        cursor: pointer;
+        outline: 5px solid $orange-color;
+        border-radius: 100%;
+        transition: all 0.2s;
+    }
+}
