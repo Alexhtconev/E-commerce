@@ -1,0 +1,51 @@
+.total__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.grid__wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 750px;
+    justify-content: space-between;
+}
+
+.grid__wrapper-mini {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    width: 600px;
+}
+
+.boots {
+    border-radius: 20px;
+    cursor: pointer;
+}
+.mini {
+    width: 125px;
+}
+.mini {
+    &:hover{
+        opacity: 50%;
+        transition: all 0.5s;
+    }
+}
+.active__class {
+    opacity: 40%;
+    cursor: default;
+    transition: all 0.5s;
+}
+.wrap {
+    margin-top: 4px;
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 125px;
+    width: 125px;
+    outline: 4px solid $orange-color;
+    &__hide{
+        outline: none;
+    }
+}
