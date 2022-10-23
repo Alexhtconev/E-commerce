@@ -73,6 +73,7 @@ nav{
 }
 
 .photo__img {
+    height: 100px;
     &:hover{
         cursor: pointer;
         outline: 5px solid $orange-color;
